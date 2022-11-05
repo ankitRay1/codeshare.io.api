@@ -1,0 +1,25 @@
+{
+  "name": "codeshare.io-server",
+  "version": "1.0.0",
+  "description": "Codeshare.io Clone  enables developers to share code in real-time. Write or paste code in your browser, share the URL, code in real-time with friends and team mates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "codeshare.io",
+    "clone",
+    "codeshare.io"
+  ],
+  "author": "Ankit kumar",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "http": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.7.1",
+    "socket.io": "^4.5.3"
+  }
+}
