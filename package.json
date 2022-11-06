@@ -4,7 +4,7 @@
   "description": "Codeshare.io Clone  enables developers to share code in real-time. Write or paste code in your browser, share the URL, code in real-time with friends and team mates",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
