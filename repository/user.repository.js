@@ -11,7 +11,7 @@ const signInUser = async (req, callback) => {
     // }
 
     try {
-        const { name, email, profileUrl } = req.body;
+        const { name, email, profilePic } = req.body;
 
         let user = await UserModel.findOne({ email: email });
 
@@ -22,7 +22,7 @@ const signInUser = async (req, callback) => {
         }
 
         if (!user) {
-            user = UserModel({ name: name, email: email, profilePic: profileUrl });
+            user = UserModel({ name: name, email: email, profilePic: profilePic });
 
             user = await user.save();
 
