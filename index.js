@@ -46,6 +46,7 @@ io.on("connection", (socket) => {
     });
 
     socket.on("save", (data) => {
+        // console.log(data);
 
         saveData(data);
     });
@@ -53,12 +54,15 @@ io.on("connection", (socket) => {
 
 const saveData = async (data) => {
     try {
-        let document = await documentModel.findOne({ databaseId: data.room });
+        // console.log('I am databaes room ' + data.room);
+        let document = await documentModel.findOne({ documentId: data.room });
 
-        if (document) {
-            document.content = data.delta;
-            document = await document.save();
-        }
+
+        document.content = data.delta;
+        document = await document.save();
+
+        // console.log('I am doc content' + document.content);
+
 
     } catch (error) {
         console.log(error);
